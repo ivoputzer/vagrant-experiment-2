@@ -11,24 +11,23 @@ present how you came up with the solution to make the application available, thr
 
 
 Team 1
-Roberto
-Livio
-Piervito
-Matteo
-
+Manzo Roberto
+Biondo Livio
+Coletta Piervito
+Marchiori Matteo
 
 Team 2
-Francesco
-Mattia
-Luca2
+De Montis Francesco
+Federici Mattia
+Fumagalli Luca2
 
 Team 3
-Tomaso
-Matteo
-Serghei
-Andrea
+Piferi Tomaso
+Rocco Matteo
+Socolovschi Serghei
+Montemaggiore Andrea
 
 Team 4
-Pietro Vassallo
+Vassallo Pietro
 Straface Mariangela
-Giorgio Giorgini
+Giorgini Giorgio
