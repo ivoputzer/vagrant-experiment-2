@@ -9,6 +9,7 @@ create a vagrant box that contains a program or application of your choice.
 
 present how you came up with the solution to make the application available, through provisioning.
 
+**Regroup: 16:45**
 
 Team 1
 Manzo Roberto
