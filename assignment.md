@@ -10,25 +10,3 @@ create a vagrant box that contains a program or application of your choice.
 present how you came up with the solution to make the application available, through provisioning.
 
 **Regroup: 16:45**
-
-Team 1
-Manzo Roberto
-Biondo Livio
-Coletta Piervito
-Marchiori Matteo
-
-Team 2
-De Montis Francesco
-Federici Mattia
-Fumagalli Luca2
-
-Team 3
-Piferi Tomaso
-Rocco Matteo
-Socolovschi Serghei
-Montemaggiore Andrea
-
-Team 4
-Vassallo Pietro
-Straface Mariangela
-Giorgini Giorgio
