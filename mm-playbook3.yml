@@ -1,0 +1,21 @@
+---
+- name: Assignment 3
+  hosts: all
+  tasks:
+  - name: Create users foo,bar and baz
+    user:
+      name: "{{ item }}"
+      state: present
+    loop:
+     - foo
+     - bar
+     - baz
+
+  - name: Create /tmp/1 /tmp/2 /tmp/3 directories
+    file:
+      path: "{{ item }}"
+      state: directory
+    loop:
+      - /tmp/1
+      - /tmp/2
+      - /tmp/3
