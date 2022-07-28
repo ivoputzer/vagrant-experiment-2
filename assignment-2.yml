@@ -1,0 +1,11 @@
+- hosts: all
+  tasks:
+  - name: "touches files if not already present /tmp/{z, y, z}"
+    copy:
+      content: ""
+      dest: "{{ item }}"
+      force: false
+    loop:
+      - /tmp/x
+      - /tmp/y
+      - /tmp/z
