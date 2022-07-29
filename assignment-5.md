@@ -15,15 +15,15 @@ Rewrite the provisioning instructions used to setup your team's project. Within 
   - mosh
   - speedtest-cli (optional – https://www.speedtest.net/apps/cli)
 
--> REGROUP (((16:30)))
+**>> REGROUP 16:30**
 
-### Team 1
+### Team 1
 Manzo Roberto, Biondo Livio, Coletta Piervito, Marchiori Matteo
 
 ### Team 2
 De Montis Francesco, Federici Mattia, Fumagalli Luca2
 
-### Team 3
+### Team 3
 Piferi Tomaso, Rocco Matteo, Socolovschi Serghei, Montemaggiore Andrea
 
 ### Team 4
