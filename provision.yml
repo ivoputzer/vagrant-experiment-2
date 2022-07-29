@@ -1,0 +1,10 @@
+# config.vm.provision "shell", inline: <<-SHELL
+#   apt update
+#   apt install -y nginx
+# SHELL
+- hosts: all
+  tasks:
+  - name: "Install nginx package"
+    package:
+      name: nginx
+      state: present

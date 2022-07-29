@@ -15,8 +15,22 @@ Vagrant.configure("2") do |config|
   config.vm.network "private_network", ip: "192.168.56.2"
   config.vm.synced_folder "./data", "/host_data"
 
-  config.vm.provision "shell", inline: <<-SHELL
-    apt update
-    apt install -y nginx
-  SHELL
+  # config.vm.provision "shell", inline: <<-SHELL
+  #   apt update
+  #   apt install -y nginx
+  # SHELL
+
+  config.vm.provision "ansible" do |ansible|
+    ansible.playbook = "provision.yml"
+    ansible.verbose = "v"
+    ansible.extra_vars = {
+      # "host_key_checking": false,
+      "ansible_become": true,
+      "ansible_become_user": "root",
+      # "ansible_ssh_user": "vagrant",
+      # "ansible_ssh_private_key_file": ".vagrant/machines/default/virtualbox/private_key",
+      # "ansible_ssh_common_args": "-o StrictHostKeyChecking=no",
+      "ansible_python_interpreter": "/usr/bin/python3"
+    }
+  end
 end
