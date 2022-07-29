@@ -1,0 +1,28 @@
+---
+- name: Assignment 1
+  hosts: all
+  tasks:
+  - name: Install htop on Ubuntu 20
+    package:
+      name: htop
+      state: present
+    when: ansible_distribution_major_version == "20"
+
+  - name: Install netcat on Ubuntu 18
+    package:
+      name: netcat
+      state: present
+    when: ansible_distribution_major_version == "18"
+
+  - name: Add a random user
+    user:
+      name: "{{ item }}"
+      state: present
+    with_random_choice:
+     - foo
+     - bar
+     - baz
+
+  - name: "debug"
+    debug:
+      msg: "debug message {{ansible_distribution_major_version}}"

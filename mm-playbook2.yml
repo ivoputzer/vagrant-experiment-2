@@ -1,0 +1,13 @@
+---
+- name: Assignment 2
+  hosts: all
+  tasks:
+  - name: Create files if they do not exists
+    copy:
+      content: ""
+      dest: "{{ item }}"
+      force: no
+    loop:
+      - /tmp/x
+      - /tmp/y
+      - /tmp/x
