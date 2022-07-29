@@ -24,12 +24,8 @@ Vagrant.configure("2") do |config|
     ansible.playbook = "provision.yml"
     ansible.verbose = "v"
     ansible.extra_vars = {
-      # "host_key_checking": false,
       "ansible_become": true,
       "ansible_become_user": "root",
-      # "ansible_ssh_user": "vagrant",
-      # "ansible_ssh_private_key_file": ".vagrant/machines/default/virtualbox/private_key",
-      # "ansible_ssh_common_args": "-o StrictHostKeyChecking=no",
       "ansible_python_interpreter": "/usr/bin/python3"
     }
   end
